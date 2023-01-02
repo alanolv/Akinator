@@ -69,7 +69,7 @@ database=[
 
     {"name":"frigga", "humano": True,  "mujer" : True},
 
-    {"name":"drax el destructor", "extraterrestre": True, "hombre" : True},
+    {"name":"drax el destructor", "extraterrestre": True, "hombre" : True, "gris":True},
 
     {"name":"calavera", "humano": True, "hombre" : True},
 
@@ -79,7 +79,7 @@ database=[
 
     {"name":"alexander pierce", "humano": True, "hombre" : True},
     
-    {"name":"valquiria", "humano": True,  "mujer" : True},
+    {"name":"valquiria", "humano": True,  "mujer" : True,"asgardiana":True},
     
     {"name":"okoye", "humano": True,  "mujer" : True},
 
@@ -128,10 +128,10 @@ def comprobar_respuesta(answer, property):
         quit()
         
 print("Akinator Marvel-Endgame edition")
-lista_pregunta=[]
+lista_pregunta=["name"]
 for personaje in database:
     for caracteristica in personaje:
-        if caracteristica=="name":
+        if caracteristica in lista_pregunta:
             n=1
         else:
             lista_pregunta.append(caracteristica)
