@@ -19,11 +19,11 @@ database = [
 
     {"name":"bruja escarlata", "es femenino":True, "es humano":True, "es adulto":True, "es heroe":True, "vuela":True, "sobrevivio al primer chasquido":True, "es vengador":True, "fue novia de  vision":True},
 
-    {"name":"Cassie Lang", "es masculino": True,"es humano":True,"es joven":True,"es civil":True,"sobrevivio al primer chasquido":True,"es hija de antman":True},
+    {"name":"Cassie Lang", "es femenino": True,"es humano":True,"es joven":True,"es civil":True,"sobrevivio al primer chasquido":True,"es hija de antman":True},
     
     {"name":"bucky barnes", "es masculino": True,"es humano":True,"es adulto":True,"es heroe":True,"es el mejor amigo de capitan america":True},
 
-    {"name":"scott lang","es masculino": True,"es humano":True,"es adulto":True,"es heroe":True,"se encoge":True},
+    {"name":"scott lang","es masculino": True,"es humano":True,"es adulto":True,"es heroe":True,"sobrevivio al primer chasquido":True,"se encoge":True},
     
     {"name":"craneo rojo", "es masculino": True,"es humano":True,"es adulto":True,"es villano":True,"es el cuidador de la gema del alma":True},
 
@@ -39,7 +39,7 @@ database = [
 
     {"name":"jane foster", "es femenino": True,"es humano":True,"es adulto":True,"es civil":True,"sobrevivio al primer chasquido":True,"era novia de thor":True},
 
-    {"name":"morgan stark", "es femenino": True,"es humano":True,"es joven":True,"es civil":True,"sobreivio al primer chasquido":True,"es hija de tony stark":True},
+    {"name":"morgan stark", "es femenino": True,"es humano":True,"es joven":True,"es civil":True,"sobrevivio al primer chasquido":True,"es hija de tony stark":True},
 
     {"name":"shuri", "es femenino": True,  "es humano" : True, "es joven": True, "es civil": True, "sobrevivio al primer chasquido":True, "es wakandiano": True,"es hermana de tchalla":True},
 
@@ -51,15 +51,15 @@ database = [
 
     {"name":"rocket racoon", "es masculino": True, "es extraterrestre": True, "es adulto": True, "es heroe": True, "sobrevivio al primer chasquido":True, "es guardian de la galaxia": True,"es el mejor amigo de groot":True},
 
-    {"name":"el ancestral", "humano": True,  "es humano" : True, "es adulto": True, "es heroe": True, "vuela": True,"es la mentora de doctor strange":True},
+    {"name":"el ancestral", "es femenino": True,  "es humano" : True, "es adulto": True, "es heroe": True, "vuela": True,"es la mentora de doctor strange":True},
 
     {"name":"maquina de guerra", "es masculino": True, "es humano" : True, "es adulto": True, "es heroe": True, "vuela": True, "sobrevivio al primer chasquido":True,"es amigo de tony stark":True},
 
     {"name":"ebony maw", "es masculino": True, "es extraterrestre" : True, "es adulto": True, "es villano": True, "vuela": True, "es de la orden oscura":True,"tiene poderes de telequinesis":True},
 
-    {"name":"falcon", "es masculino": True, "es humano" : True, "es adulto": True, "es heroe": True, "vuela": True,"es amigo de capitan america":True},
+    {"name":"falcon", "es masculino": True, "es humano" : True, "es adulto": True, "es heroe": True, "vuela": True,"es parte del ejercito":True},
 
-    {"name":"harley", "es masculino": True, "es humano" : True, "es joven": True, "es civil": True,"ayudo a tony stark":True},
+    {"name":"harley", "es masculino": True, "es humano" : True, "es joven": True, "es civil": True,"sobrevivio al primer chasquido":True,"ayudo a tony stark":True},
 ##josu
     {"name":"avispa", "es femenino" : True, "es humano": True, "es adulto" : True, "es heroe" : True, "vuela" : True, "se encoge": True},
 
@@ -129,17 +129,17 @@ def comprobar_respuesta(answer, property):
         
 print("Akinator Marvel-Endgame edition")
 lista_pregunta=["name"]
-for personaje in database:
-    for caracteristica in personaje:
-        if caracteristica in lista_pregunta:
-            n=1
-        else:
-            lista_pregunta.append(caracteristica)
-            Respuesta = input("Tu personaje "+caracteristica+" (y,n)")
-            comprobar_respuesta(Respuesta, caracteristica)
-            print(database)
-            if personaje not in database:
-                break
-       
+while len(database)> 1:
+    for personaje in database:
+        for caracteristica in personaje:
+            if caracteristica in lista_pregunta:
+                n=1
+            else:
+                lista_pregunta.append(caracteristica)
+                Respuesta = input("Tu personaje "+caracteristica+" (y,n)")
+                comprobar_respuesta(Respuesta, caracteristica)
+                print(database)
+                if personaje not in database:
+                    break
 
 
