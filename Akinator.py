@@ -1,103 +1,101 @@
-database=[
-    {"name":"thanos", "extraterrestre":True,"hombre":True, },
+database = [
+    {"name":"thanos", "es masculino":True, "es extraterrestre":True, "es adulto":True,"es villano":True,"sobrevivio al primer chasquido":True,  },
     
-    {"name":"iron man", "humano": True, "hombre" : True},
+    {"name":"iron man", "es masculino":True, "es humano":True, "es adulto":True, "es heroe":True, "vuela":True, "sobrevivio al primer chasquido":True, "es vengador":True},
     
-    {"name":"capitan america", "humano": True,  "hombre" : True},
+    {"name":"capitan america", "es masculino":True, "es humano":True, "es adulto":True,"es heroe":True, "sobrevivio al primer chasquido":True, "es vengador":True },
     
-    {"name":"spiderman","humano": True,  "hombre" : True, "poderes": True },
+    {"name":"spiderman","es masculino":True, "es humano":True, "es joven":True, "es heroe":True, "es vengador":True },
     
-    {"name":"pantera negra", "humano": True,  "hombre" : True},
+    {"name":"pantera negra", "es masculino":True, "es humano":True, "es adulto":True, "es heroe":True},
 
-    {"name":"thor", "humano": True,  "hombre" : True, "poderes": True},
+    {"name":"thor", "es masculino":True, "es extraterrestre":True, "es adulto":True, "es heroe":True, "vuela":True, "es vengador":True, "sobrevivio al primer chasquido":True},
     
-    {"name":"hulk", "humano": True,  "hombre" : True, "poderes": True},
+    {"name":"hulk", "es masculino":True, "es humano":True, "es adulto":True, "es heroe":True,"es vengador":True, "sobrevivio al primer chasquido":True},
 
-    {"name":"doctor strange", "humano": True,  "hombre" : True, "poderes": True},
+    {"name":"doctor strange","es masculino":True, "es humano":True, "es adulto":True, "es heroe":True, "es heroe":True, "vuela":True},
 
-    {"name":"gamora", "humano": True,  "mujer" : True},
+    {"name":"gamora", "es femenino":True, "es extraterrestre":True, "es adulto":True, "es heroe":True, "es guardian":True},
 
-    {"name":"bruja escarlata", "humano": True,  "mujer" : True, "poderes": True},
+    {"name":"bruja escarlata", "es femenino":True, "es humano":True, "es adulto":True, "es heroe":True, "vuela":True, "sobrevivio al primer chasquido":True, "es vengador":True},
 
-    {"name":"la hija de antman", "humano": True,  "mujer" : True},
+    {"name":"la hija de antman", "es masculino": True,"es humano":True,"es joven":True,"es civil":True,"sobrevivio al primer chasquido":True},
     
-    {"name":"bucky barnes", "humano": True, "hombre" : True},
+    {"name":"bucky barnes", "es masculino": True,"es humano":True,"es adulto":True,"es heroe":True},
 
-    {"name":"scott lang", "humano": True, "hombre" : True},
+    {"name":"scott lang","es masculino": True,"es humano":True,"es adulto":True,"es heroe":True},
     
-    {"name":"craneo rojo", "humano": True, "hombre" : True},
+    {"name":"craneo rojo", "es masculino": True,"es humano":True,"es adulto":True,"es villano":True},
 
-    {"name":"groot", "extraterrestre": True, "hombre" : True, "poderes": True},
+    {"name":"groot", "es masculino": True,"es extraterrestre":True,"es joven":True,"es heroe":True,"es guardian de la galaxia":True}, 
 
-    {"name":"vision", "androide": True, "hombre" : True, "poderes": True},
+    {"name":"vision", "es masculino": True,"es androide":True,"es adulto":True,"es heroe":True,"vuela":True},
 
-    {"name":"loki", "humano": True, "hombre" : True, "poderes": True},
+    {"name":"loki", "es masculino": True,"es extraterrestre":True,"es adulto":True,"es villano":True},
 
-    {"name":"peper pots", "humano": True,  "mujer" : True},
+    {"name":"peper pots", "es femenino": True,"es humano":True,"es adulto":True,"es civil":True,"sobrevivio al primer chasquido":True},
 
-    {"name":"jane foster", "humano": True,  "mujer" : True},
+    {"name":"jane foster", "es femenino": True,"es humano":True,"es adulto":True,"es civil":True,"sobrevivio al primer chasquido":True},
 
-    {"name":"morgan stark", "humano": True,  "mujer" : True},
+    {"name":"morgan stark", "es femenino": True,"es humano":True,"es joven":True,"es civil":True,"sobreivio al primer chasquido":True},
 
-    {"name":"shuri", "humano": True,  "mujer" : True},
+    {"name":"shuri", "es femenino": True,  "es humano" : True, "es joven": True, "es civil": True, "sobrevivio al primer chasquido":True, "es wakandiano": True },
 
-    {"name":"henry pym", "humano": True, "hombre" : True},
+    {"name":"henry pym", "es masculino": True, "es humano" : True, "es adulto": True, "es civil": True},
 
-    {"name":"howard stark", "humano": True, "hombre" : True},
+    {"name":"howard stark", "es masculino": True, "es humano" : True, "es adulto": True, "es civil": True},
 
-    {"name":"star lord", "humano": True, "hombre" : True},
+    {"name":"star lord", "es masculino": True, "es humano" : True, "es adulto": True, "es heroe": True, "vuela": True, "es guardian de la galaxia": True},
 
-    {"name":"rocket racoon", "extraterrestre": True, "animal": True, "hombre" : True},
+    {"name":"rocket racoon", "es masculino": True, "es extraterrestre": True, "es adulto": True, "es heroe": True, "sobrevivio al primer chasquido":True, "es guardian de la galaxia": True},
 
-    {"name":"el anciano", "humano": True,  "mujer" : True, "poderes": True},
+    {"name":"el ancestral", "humano": True,  "es humano" : True, "es adulto": True, "es heroe": True, "vuela": True},
 
-    {"name":"maquina de guerra", "humano": True, "hombre" : True},
+    {"name":"maquina de guerra", "es masculino": True, "es humano" : True, "es adulto": True, "es heroe": True, "vuela": True, "sobrevivio al primer chasquido":True},
 
-    {"name":"ebony maw", "extraterrestre": True, "hombre" : True, "poderes": True},
+    {"name":"ebony maw", "es masculino": True, "es extraterrestre" : True, "es adulto": True, "es villano": True, "vuela": True, "es de la orden oscura":True},
 
-    {"name":"falcon", "humano": True, "hombre" : True},
+    {"name":"falcon", "es masculino": True, "es humano" : True, "es adulto": True, "es heroe": True, "vuela": True},
 
-    {"name":"harley", "humano": True, "hombre" : True},
+    {"name":"harley", "es masculino": True, "es humano" : True, "es joven": True, "es civil": True},
 
-    {"name":"avispa", "humano": True,  "mujer" : True},
+    {"name":"avispa", "es femenino" : True, "es humano": True, "es adulto" : True, "es heroe" : True, "vuela" : True},
 
-    {"name":"korg","extraterrestre": True, "hombre" : True,}, 
+    {"name":"korg", "es masculino" : True, "es extraterrestre": True, "es adulto" : True, "es heroe" : True, "sobrevivio al primer chasquido" : True}, 
 
-    {"name":"mbaku", "humano": True, "hombre" : True},
+    {"name":"mbaku", "es masculino" : True, "es humano": True, "es adulto" : True, "es villano" : True, "sobrevivio al primer chasquido" : True},
 
-    {"name":"kraglin", "extraterrestre": True, "hombre" : True},
+    {"name":"kraglin", "es masculino" : True, "es extraterrestre": True, "es adulto" : True, "es heroe" : True, "sobrevivio al primer chasquido" : True},
 
-    {"name":"frigga", "humano": True,  "mujer" : True},
+    {"name":"frigga", "es femenino": True,  "es extraterrestre": True, "es adulto" : True},
 
-    {"name":"drax el destructor", "extraterrestre": True, "hombre" : True, "gris":True},
+    {"name":"drax el destructor", "es masculino" : True, "es extraterrestre": True, "es adulto" : True, "es heroe" : True},
 
-    {"name":"calavera", "humano": True, "hombre" : True},
+    {"name":"calavera", "es masculino": True, "es humano" : True,  "es adulto": True, "es villano": True},
 
-    {"name":"corvus glalve", "extraterrestre": True, "hombre" : True},
+    {"name":"corvus glaive", "es masculino": True, "es extraterrestre" : True, "es adulto": True, "es villano": True, "es de la orden oscura": True},
 
-    {"name":"may parker", "humano": True,  "mujer" : True},
+    {"name":"may parker", "es femenino": True,  "es humano" : True, "es adulto": True, "es civil": True},
 
-    {"name":"alexander pierce", "humano": True, "hombre" : True},
+    {"name":"alexander pierce", "es masculino": True, "es humano" : True, "es adulto": True, "es villano": True},
     
-    {"name":"valquiria", "humano": True,  "mujer" : True,"asgardiana":True},
+    {"name":"valquiria", "es femenino": True, "es extraterrestre":True, "es adulto":True, "es heroe":True, "sobrevivio al primer chasquido":True},
     
-    {"name":"okoye", "humano": True,  "mujer" : True},
+    {"name":"okoye", "es femenino": True,  "es humano" : True, "es adulto":True, "es heroe":True, "sobrevivio al primer chasquido":True},
 
-    {"name":"mantis", "humano": True,  "mujer" : True},
+    {"name":"mantis", "es femenino": True,  "es extraterrestre" : True,"es adulto":True ,"es heroe":True,"es guardian de la galaxia":True},
 
-    {"name":"happy holgan", "humano": True, "hombre" : True},
+    {"name":"happy holgan", "es masculino": True, "es humano" : True, "es adulto": True, "es civil": True, "sobrevivio al primer chasquido":True},
 
-    {"name":"proxima midnight", "humano": True,  "mujer" : True},
+    {"name":"proxima midnight", "es femenino": True,  "es extraterrestre" : True,"es adulto":True ,"es villano":True,"es de la orden oscura":True},
 
-    {"name":"nick fury", "humano": True, "hombre" : True},
+    {"name":"nick fury", "es masculino": True,"es humano":True,"es adulto":True,"es heroe":True},
 
-    {"name":"wong", "humano": True, "hombre" : True},
+    {"name":"wong", "es masculino": True,"es humano":True,"es adulto":True,"es heroe":True,"sobrevivio al primer chasquido":True},
+    
+    {"name":"maria hill", "es femenino": True,"es humano":True,"es adulto":True,"es heroe":True,"sobrevivio al primer chasquido":True},
 
-    {"name":"hope van dyne", "humano": True,  "mujer" : True},
-
-    {"name":"maria hill", "humano": True,  "mujer" : True},
-
-    {"name":"cooper barton", "humano": True, "hombre" : True},
+    {"name":"cooper barton","es masculino":True,"es humano":True,"es joven":True,"es civil":True,"sobrevivio al primer chasquido":True},
 
 ]
 def comprobar_respuesta(answer, property):
@@ -124,7 +122,7 @@ def comprobar_respuesta(answer, property):
         database.remove(i)
 
     if len(database) == 1:
-        print("your character is "+database[0]["name"])
+        print("Tu personaje es "+database[0]["name"])
         quit()
         
 print("Akinator Marvel-Endgame edition")
@@ -135,17 +133,9 @@ for personaje in database:
             n=1
         else:
             lista_pregunta.append(caracteristica)
-            Respuesta = input("Tu personaje es "+caracteristica+" (y,n)")
+            Respuesta = input("Tu personaje "+caracteristica+" (y,n)")
             comprobar_respuesta(Respuesta, caracteristica)
             print(lista_pregunta)
+            print(database)
        
 print(database)
-#Respuesta = input("Tu personaje es humano (y,n)")
-#comprobar_respuesta(Respuesta, "humano")
-
-#Respuesta = input("Tu personaje es hombre (y,n)")
-#comprobar_respuesta(Respuesta, "hombre")
-#Respuesta = input("Tu personaje es mujer (y,n)")
-#comprobar_respuesta(Respuesta, "mujer")
-#Respuesta = input("Tu personaje es inventado(y,n)")
-#comprobar_respuesta(Respuesta, "inventado")
