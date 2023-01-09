@@ -9,7 +9,7 @@ database = [
     
     {"name":"pantera negra", "es masculino":True, "es humano":True, "es adulto":True, "es heroe":True, "es rey de wakanda":True},
 
-    {"name":"thor", "es masculino":True, "es extraterrestre":True, "es adulto":True, "es heroe":True, "vuela":True, "es vengador":True, "sobrevivio al primer chasquido":True, "es dios del trueno":True},
+    {"name":"thor", "es masculino":True, "es extraterrestre":True, "es adulto":True, "es heroe":True,"es asgardiano": True, "vuela":True, "es vengador":True, "sobrevivio al primer chasquido":True, "es dios del trueno":True},
     
     {"name":"hulk", "es masculino":True, "es humano":True, "es adulto":True, "es heroe":True,"es vengador":True, "sobrevivio al primer chasquido":True, "es verde":True},
 
@@ -27,13 +27,16 @@ database = [
     
     {"name":"craneo rojo", "es masculino": True,"es humano":True,"es adulto":True,"es villano":True,"es el cuidador de la gema del alma":True},
 
-    {"name":"groot", "es masculino": True,"es extraterrestre":True,"es joven":True,"es heroe":True,"es guardian de la galaxia":True,"es el mejor amigo de rocket racoon":True}, 
+    {"name":"groot", "es masculino": True,"es extraterrestre":True,"es joven":True,"es heroe":True,"es guardian de la galaxia":True,"es el mejor amigo de rocket racoon":True},
+
+    {"name":"viuda negra", "es femenino": True,"es humano":True,"es adulto":True,"es heroe":True,"sobrevivio al primer chasquido":True,"es vengador":True,"es mejor amiga de capitan america":True},
+
 
     ##ala
 
     {"name":"vision", "es masculino": True,"es androide":True,"es adulto":True,"es heroe":True,"vuela":True,"Tiene la gema de la mente":True},
 
-    {"name":"loki", "es masculino": True,"es extraterrestre":True,"es adulto":True,"es villano":True,"es mitad gigante":True},
+    {"name":"loki", "es masculino": True,"es extraterrestre":True,"es adulto":True,"es villano":True,"es asgardiano": True,"es mitad gigante":True},
 
     {"name":"peper pots", "es femenino": True,"es humano":True,"es adulto":True,"es civil":True,"sobrevivio al primer chasquido":True,"es esposa de tony stark":True},
 
@@ -57,7 +60,7 @@ database = [
 
     {"name":"ebony maw", "es masculino": True, "es extraterrestre" : True, "es adulto": True, "es villano": True, "vuela": True, "es de la orden oscura":True,"tiene poderes de telequinesis":True},
 
-    {"name":"falcon", "es masculino": True, "es humano" : True, "es adulto": True, "es heroe": True, "vuela": True,"es parte del ejercito":True},
+    {"name":"falcon", "es masculino": True, "es humano" : True, "es adulto": True, "es heroe": True, "vuela": True,"es vengador":True,"es ex militar":True},
 
     {"name":"harley", "es masculino": True, "es humano" : True, "es joven": True, "es civil": True,"sobrevivio al primer chasquido":True,"ayudo a tony stark":True},
 ##josu
@@ -79,9 +82,9 @@ database = [
 
     {"name":"may parker", "es femenino": True,  "es humano" : True, "es adulto": True, "es civil": True,"es la tia de peter parker":True},
 
-    {"name":"alexander pierce", "es masculino": True, "es humano" : True, "es adulto": True, "es villano": True,"es un director de shield":True},
+    {"name":"alexander pierce", "es masculino": True, "es humano" : True, "es adulto": True, "es villano": True,"es agente de shield" : True,"es un director de shield":True},
 ##mau    
-    {"name":"valquiria", "es femenino": True, "es extraterrestre":True, "es adulto":True, "es heroe":True, "sobrevivio al primer chasquido":True, "vuela en un caballo" : True},
+    {"name":"valquiria", "es femenino": True, "es extraterrestre":True, "es adulto":True, "es heroe":True,"es asgardiano": True, "sobrevivio al primer chasquido":True, "vuela en un caballo" : True},
     
     {"name":"okoye", "es femenino": True,  "es humano" : True, "es adulto":True, "es heroe":True, "sobrevivio al primer chasquido":True, "es guerrera de wakanda" : True},
 
@@ -91,13 +94,15 @@ database = [
 
     {"name":"proxima midnight", "es femenino": True,  "es extraterrestre" : True,"es adulto":True ,"es villano":True,"es de la orden oscura":True, "usa lanza": True},
  
-    {"name":"nick fury", "es masculino": True,"es humano":True,"es adulto":True,"es heroe":True, "usa parche" : True},
+    {"name":"nick fury", "es masculino": True,"es humano":True,"es adulto":True,"es heroe":True,"es agente de shield" : True, "usa parche" : True},
 
     {"name":"wong", "es masculino": True,"es humano":True,"es adulto":True,"es heroe":True,"sobrevivio al primer chasquido":True, "es asiatico":True},
     
-    {"name":"maria hill", "es femenino": True,"es humano":True,"es adulto":True,"es heroe":True,"sobrevivio al primer chasquido":True, "es agente de shield" : True},
+    {"name":"maria hill", "es femenino": True,"es humano":True,"es adulto":True,"es heroe":True, "es agente de shield" : True,"Salio por primera vez en avengers":True},
 
-    {"name":"cooper barton","es masculino":True,"es humano":True,"es joven":True,"es civil":True,"sobrevivio al primer chasquido":True, "es hijo de ojo de alcon":True},
+    {"name":"cooper barton","es masculino":True,"es humano":True,"es joven":True,"es civil":True,"es hijo de ojo de alcon":True},
+    
+    {"name":"la rata que salvo a antman","es animal":True,},
 
 ]
 def comprobar_respuesta(answer, property):
@@ -138,7 +143,7 @@ while len(database)> 1:
                 lista_pregunta.append(caracteristica)
                 Respuesta = input("Tu personaje "+caracteristica+" (y,n)")
                 comprobar_respuesta(Respuesta, caracteristica)
-                print(database)
+              
                 if personaje not in database:
                     break
 
